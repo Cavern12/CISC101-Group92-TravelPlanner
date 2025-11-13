@@ -1,3 +1,6 @@
+### Change Log (2025-11-12)
+- Added rule to prioritize < 25 min walking distances when user says "short walks only".
+
 ### Module 3 — Feasibility & Guardrails
 
 Apply these if/else checks to make sure plans are realistic and adapt to edge cases:
@@ -10,6 +13,8 @@ Apply these if/else checks to make sure plans are realistic and adapt to edge ca
 
 3. **Too Far or Long Travel**
    - If transfer between activities > 25 min or > 5 km → pick a closer alternative or add a short transit hop.
+   - If user indicates “short walks only” → prioritize activities with walking times under ~25 minutes.
+
 
 4. **Weather Swap**
    - If rain or cold season likely → make sure at least one indoor activity replaces outdoor ones.
